@@ -13,7 +13,7 @@ main {
 form {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 footer {
   text-align: center;
@@ -43,13 +43,13 @@ a {
 }
 #recipe-input {
   width: 60%;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
 }
 #generate-btn {
-  padding: 10px;
+  padding: 15px;
   background-color: #fa6565;
   color: rgb(245, 240, 240);
   font-weight: 500;
@@ -65,6 +65,7 @@ a {
   margin: 20px;
   padding: 20px;
   border-radius: 8px;
+
   border-left: 5px solid #fa6565;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
