@@ -2,7 +2,7 @@ function displayRecipe(response) {
   new Typewriter(".recipe-container", {
     strings: response.data.answer,
     autoStart: true,
-    delay: 10,
+    delay: 5,
     cursor: "",
   });
 }
@@ -17,6 +17,10 @@ function SearchRecipe(event) {
     "Make sure the recipe is easy to follow and includes measurements for each ingredient. Be short and very brief about instructions and steps. Do not include any additional information or commentary. Place the name of the recipe at top in HTML using Strong element, Use <br /> tag for line breaks after receipe name, ingreditents and instrcuitions as well, and also use <strong> tags for Ingredents and instructions headings. Use numbers to display step by steps instructions.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipeContainer = document.querySelector(".recipe-container");
+  recipeContainer.classList.add("hidden");
+  recipeContainer.innerHTML =
+    '<span class="blink">⌛ loading recipe for ' + recipe + "...</span>";
   axios.get(apiUrl).then(displayRecipe);
 }
 
