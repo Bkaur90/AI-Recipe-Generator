@@ -69,3 +69,6 @@ a {
   border-left: 5px solid #fa6565;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
+.recipe-container strong {
+  color: #d10707;
+}
